@@ -1,0 +1,51 @@
+# gatsby-theme-carbon-editor
+The Gatsby Theme Carbon Editor on codesandbox makes it easier to write documentation
+files for gatsby-theme-carbon without having to set up or use a development environment.
+
+## Why?
+Not everyone that writes docs for site that use the gatsby-theme-carbon editor are technical.
+This causes a huge barrier for contributions to docs site and bottlenecks developers. The
+gatsby-theme-carbon also have long build times when a user is looking to edit a single file.
+
+## How to use?
+
+### 1. Fork this template by selecting `Fork` in the top right. You may need to sign in with Github
+
+### 2. Edit this file (index.mdx) with your own content. This could mean creating your
+own docs from scratch, or pasting in existing docs and editing them.
+
+1. All components available on the [gatsby-theme-carbon docs](https://gatsby-theme-carbon.now.sh/getting-started/)
+are available for usage here. For example a Resource Card
+
+<ResourceCard subTitle="Only subtitle" actionIcon="download" aspectRatio="2:1" href="https://github.com/IBM/carbon-elements/blob/master/.github/CONTRIBUTING.md">
+
+![Github icon](/images/github-icon.png)
+
+</ResourceCard>
+
+2. Add images to the image folder as needed
+
+### 3. Once ready, copy the new content into a PR for your gatsby-theme-carbon docs site
+
+1. Navigate the the [Githib Repo](https://github.com/carbon-design-system/carbon-website), Let's use Carbon as an example.
+
+1. Create a new file using Github's UI in the location you are adding docs to.
+For this example let's add this file to https://github.com/carbon-design-system/carbon-website/tree/master/src/pages/how-to-contribute
+
+1. Select "Create New File" in Github's UI. Add a title with a `.mdx` extension, and paste in your mdx code.
+
+1. Propose a new file. This will create a new branch on your Github account where you can further add images and update the nav-items.
+Navigate to your new branch, you can do this by clicking on Forks at the top of the PR screen, selecting your Github Account, and then using the Branch dropdown selecting your newly created branch.
+
+1. Add image files. In your new branch navigate to the file you created. 
+Select create new file and in the naming section type in `images/placeholder.md` this will create a new folder for images.
+You can leave the placeholder file empty and select `commit to <branch name>`
+This creates your images folder, you can now select `Upload files` and upload any images you are using.
+Once the images are uploaded you can navigate back to the images folder, select `placeholder.md`, click the trash icon to delete, and select commit to branch.
+
+1. Lastly, we need to update the `nav-items.yaml` file so your new docs will show up on the site. Navigate to `/src/data/nav-items.yaml` in your branch
+and click the pencil icon to edit the file. Add your file into the navigation where you want it to show up and select commit to branch.
+
+1. Now that you've create your branch with the updated docs, without using the terminal, you can create a PR.
+From the repos home page select `New pull request`. This will create a PR to the source code. Make sure you are opening
+from the correct branch, and fill out any details in the comment section.
